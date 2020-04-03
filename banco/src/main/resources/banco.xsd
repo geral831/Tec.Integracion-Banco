@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.example.org/banco" 
+xmlns:tns="http://www.example.org/banco" 
+elementFormDefault="qualified">
+
+	<element name="RealizarCobroRequest"> 
+		<complexType> 
+			<sequence> 
+				<element name="num_tarjeta" type="string"> </element>
+				<element name="cantidad" type ="string"></element>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="RealizarCobroResponse">
+		<complexType>
+			<sequence>
+				<element name="pago_realizado" type="string"> </element>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="ReembolsoRequest">
+		<complexType>
+			<sequence>
+				<element name="reembolso_tarjeta" type="string"></element>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="ReembolsoResponse">
+		<complexType>
+			<sequence>
+				<element name="reembolso_realizado"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+</schema>
