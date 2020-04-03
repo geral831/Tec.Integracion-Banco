@@ -15,6 +15,7 @@ Atributo  | Tipo
 ------------- | -------------
 Num_tarjeta  | String
 Cantidad  | String
+PIN | int
 
 ## Reembolso
 
