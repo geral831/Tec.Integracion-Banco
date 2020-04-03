@@ -26,6 +26,6 @@ Cantidad  | String
 
 ## Mensajes 
 
-**Cobro:** Pide que se ingrese un numero de tarjeta (16 digitos) y la cantidad a pagar, si los campos son llenados correctamente manda el mensaje: **"Pago exitoso por la cantidad de: $ `cantidad` pesos  con cargo a la tarjeta: `num_tarjeta` "**.
+**Cobro:** Pide que se ingrese un numero de tarjeta (16 digitos), la cantidad a pagar y el codigo de seguridad (PIN) para hacer la transaccion, si los campos son llenados correctamente manda el mensaje: **"Pago exitoso por la cantidad de: $ `cantidad` pesos  con cargo a la tarjeta: `num_tarjeta` "**.
 
 **Reembolso:** Pide que se ingrese un numero de tarjeta (16 digitos) y la cantidad que será reembolsada al cliente, si los campos son llenados correctamente manda el mensaje: **"Rembolso exitoso por la cantidad de: $ `cantidad` pesos  con cargo a la tarjeta: `num_tarjeta` "**.
