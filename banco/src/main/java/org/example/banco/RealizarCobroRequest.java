@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.7 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2020.04.02 a las 10:10:34 PM CST 
+// Generado el: 2020.04.03 a las 07:02:10 PM CST 
 //
 
 
@@ -27,6 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="num_tarjeta" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="cantidad" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="pin" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -38,7 +39,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
     "numTarjeta",
-    "cantidad"
+    "cantidad",
+    "pin"
 })
 @XmlRootElement(name = "RealizarCobroRequest")
 public class RealizarCobroRequest {
@@ -47,6 +49,7 @@ public class RealizarCobroRequest {
     protected String numTarjeta;
     @XmlElement(required = true)
     protected String cantidad;
+    protected int pin;
 
     /**
      * Obtiene el valor de la propiedad numTarjeta.
@@ -94,6 +97,22 @@ public class RealizarCobroRequest {
      */
     public void setCantidad(String value) {
         this.cantidad = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad pin.
+     * 
+     */
+    public int getPin() {
+        return pin;
+    }
+
+    /**
+     * Define el valor de la propiedad pin.
+     * 
+     */
+    public void setPin(int value) {
+        this.pin = value;
     }
 
 }

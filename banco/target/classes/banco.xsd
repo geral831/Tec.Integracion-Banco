@@ -6,9 +6,10 @@ elementFormDefault="qualified">
 
 	<element name="RealizarCobroRequest"> 
 		<complexType> 
-			<sequence> 
+			<sequence>
 				<element name="num_tarjeta" type="string"> </element>
 				<element name="cantidad" type ="string"></element>
+				<element name="pin" type="int"></element>
 			</sequence>
 		</complexType>
 	</element>
@@ -24,7 +25,8 @@ elementFormDefault="qualified">
 	<element name="ReembolsoRequest">
 		<complexType>
 			<sequence>
-				<element name="reembolso_tarjeta" type="string"></element>
+				<element name="num_tarjeta" type="string"></element>
+				<element name = "pago_por_reservacion" type = "int"></element>
 			</sequence>
 		</complexType>
 	</element>
