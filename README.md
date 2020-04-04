@@ -13,19 +13,20 @@ Servicio Web de un banco para el cobro y reembolso por tarjeta.
 
 Atributo  | Tipo
 ------------- | -------------
-Num_tarjeta  | String
-Cantidad  | String
-PIN | int
+num_tarjeta  | String
+cantidad  | String
+pin | int
 
 ## Reembolso
 
 Atributo  | Tipo
 ------------- | -------------
-Num_tarjeta  | String
-Cantidad  | String
+num_tarjeta  | String
+pago_por_reservacion  | int
 
 ## Mensajes 
 
 **Cobro:** Pide que se ingrese un numero de tarjeta (16 digitos), la cantidad a pagar y el codigo de seguridad (PIN) para hacer la transaccion, si los campos son llenados correctamente manda el mensaje: **"Pago exitoso por la cantidad de: $ `cantidad` pesos  con cargo a la tarjeta: `num_tarjeta` "**.
 
-**Reembolso:** Pide que se ingrese un numero de tarjeta (16 digitos) y la cantidad que será reembolsada al cliente, si los campos son llenados correctamente manda el mensaje: **"Rembolso exitoso por la cantidad de: $ `cantidad` pesos  con cargo a la tarjeta: `num_tarjeta` "**.
+**Reembolso:** Pide que se ingrese un numero de tarjeta (16 digitos) y la cantidad que pagó por la reservacion, si los campos son llenados correctamente manda el mensaje: **"El reembolso es del 50 % por lo que la cantidad de reembolso es de: $ `reembolso` pesos  
+A la cuenta:`num_tarjeta` "**.
