@@ -8,7 +8,32 @@ Servicio Web de un banco para el cobro y reembolso por tarjeta.
 
 - Cobro
 
+```
+<element name="RealizarCobroRequest"> 
+		<complexType> 
+			<sequence>
+				<element name="num_tarjeta" type="string"> </element>
+				<element name="cantidad" type ="string"></element>
+				<element name="pin" type="int"></element>
+			</sequence>
+		</complexType>
+	</element>
+	
+```
+
 - Reembolso
+
+```
+<element name="ReembolsoRequest">
+		<complexType>
+			<sequence>
+				<element name="num_tarjeta" type="string"></element>
+				<element name = "pago_por_reservacion" type = "int"></element>
+			</sequence>
+		</complexType>
+	</element>
+	
+```
 
 ## Cobro 
 
