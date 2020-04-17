@@ -63,7 +63,7 @@ pago_por_reservacion  | int
 
 ![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/cobro_secuencia.png)
 
-<                                                                                                    
+>                                                                                                    
 
 ![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/reembolso_secuencia.png)
 
