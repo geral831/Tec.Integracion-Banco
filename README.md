@@ -34,6 +34,11 @@ Servicio Web de un banco para el cobro y reembolso por tarjeta.
 	</element>
 	
 ```
+## Diagrama de clases 
+
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/diagrama_clases.png)
+
+
 
 ## Cobro 
 
