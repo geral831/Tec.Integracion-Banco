@@ -74,7 +74,9 @@ pago_por_reservacion  | int
 
 ![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/Digrama_Actividades.png)
 
+## Diagrama de Componentes
 
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/diagrama_componentes.png)
 
 ## Diagramas de Secuencia
 
