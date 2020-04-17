@@ -27,14 +27,17 @@ Servicio Web de un banco para el cobro y reembolso por tarjeta.
 - Reembolso
 
 ```
-<element name="ReembolsoRequest">
-		<complexType>
-			<sequence>
-				<element name="num_tarjeta" type="string"></element>
-				<element name = "pago_por_reservacion" type = "int"></element>
-			</sequence>
-		</complexType>
-	</element>
+<x:Envelope
+    xmlns:x="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:ban="http://www.example.org/banco">
+    <x:Header/>
+    <x:Body>
+        <ban:ReembolsoRequest>
+            <ban:num_tarjeta>3251000000000000</ban:num_tarjeta>
+            <ban:pago_por_reservacion>800</ban:pago_por_reservacion>
+        </ban:ReembolsoRequest>
+    </x:Body>
+</x:Envelope>
 	
 ```
 
