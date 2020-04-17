@@ -51,13 +51,18 @@ num_tarjeta  | String
 pago_por_reservacion  | int
 
 
-## Diagrama de clases 
+## Diagrama de Clases 
 
 ![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/diag_clases.png)
 
 
 ## Diagrama de Actividades
 ![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/Digrama_Actividades.png)
+
+## Diagramas de Secuencia
+
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/cobro_secuencia.png)
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/reembolso_secuencia.png)
 
 ## Mensajes 
 
