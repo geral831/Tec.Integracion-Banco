@@ -57,7 +57,7 @@ pago_por_reservacion  | int
 
 
 ## Diagrama de Actividades
-1[](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/Diagrama_Actividades.png)
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/Diagrama_Actividades.png)
 
 ## Mensajes 
 
