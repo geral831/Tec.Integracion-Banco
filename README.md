@@ -65,6 +65,10 @@ pago_por_reservacion  | int
 
 ![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/caso_usos.png)
 
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/CU1.png)
+
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/CU2.png)
+
 
 ## Diagrama de Actividades
 
