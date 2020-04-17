@@ -34,11 +34,6 @@ Servicio Web de un banco para el cobro y reembolso por tarjeta.
 	</element>
 	
 ```
-## Diagrama de clases 
-
-![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/diag_clases.png)
-
-
 
 ## Cobro 
 
@@ -54,6 +49,15 @@ Atributo  | Tipo
 ------------- | -------------
 num_tarjeta  | String
 pago_por_reservacion  | int
+
+
+## Diagrama de clases 
+
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/diag_clases.png)
+
+
+## Diagrama de Actividades
+1[](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/Diagrama_Actividades.png)
 
 ## Mensajes 
 
