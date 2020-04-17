@@ -9,15 +9,18 @@ Servicio Web de un banco para el cobro y reembolso por tarjeta.
 - Cobro
 
 ```
-<element name="RealizarCobroRequest"> 
-		<complexType> 
-			<sequence>
-				<element name="num_tarjeta" type="string"> </element>
-				<element name="cantidad" type ="string"></element>
-				<element name="pin" type="int"></element>
-			</sequence>
-		</complexType>
-	</element>
+<x:Envelope
+    xmlns:x="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:ban="http://www.example.org/banco">
+    <x:Header/>
+    <x:Body>
+        <ban:RealizarCobroRequest>
+            <ban:num_tarjeta>325100000000000</ban:num_tarjeta>
+            <ban:cantidad>545</ban:cantidad>
+            <ban:pin>5454</ban:pin>
+        </ban:RealizarCobroRequest>
+    </x:Body>
+</x:Envelope>
 	
 ```
 
