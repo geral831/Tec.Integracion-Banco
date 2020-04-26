@@ -8,7 +8,7 @@ Servicio Web de un banco para el cobro y reembolso por tarjeta.
 
 - Cobro
 
-```
+```xml
 <x:Envelope
     xmlns:x="http://schemas.xmlsoap.org/soap/envelope/"
     xmlns:ban="http://www.example.org/banco">
@@ -26,7 +26,7 @@ Servicio Web de un banco para el cobro y reembolso por tarjeta.
 
 - Reembolso
 
-```
+```xml
 <x:Envelope
     xmlns:x="http://schemas.xmlsoap.org/soap/envelope/"
     xmlns:ban="http://www.example.org/banco">
