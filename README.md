@@ -59,32 +59,32 @@ pago_por_reservacion  | int
 
 ## Diagrama de Clases 
 
-![](https://github.com/geral831/Tec.Integracion-Banco/tree/master/Docs/diagrama_clases.png)
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Docs/diagrama_clases.png)
 
 ## Diagrama Casos de Usos
 
-![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/diagrama_CU.png)
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Docs/casos_uso.png)
 
-![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/CU1.png)
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Docs/CU1_cobro.png)
 
-![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/CU2.png)
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Docs/CU2_reembolso.png)
 
 
 ## Diagrama de Actividades
 
-![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/diag_actividades.png)
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Docs/diagrama_Actividades.png)
 
 ## Diagrama de Componentes
 
-![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/diagrama_componentes.png)
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Docs/diagrama_componentes.png)
 
 ## Diagramas de Secuencia
 
-![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/cobro_secuencia.png)
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Docs/secuencia_cobro.png)
 
 
 
-![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/reembolso_secuencia.png)
+![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Docs/secuencia_reembolso.png)
 
 ## Mensajes 
 
