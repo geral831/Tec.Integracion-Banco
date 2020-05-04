@@ -59,7 +59,7 @@ pago_por_reservacion  | int
 
 ## Diagrama de Clases 
 
-![](https://github.com/geral831/Tec.Integracion-Banco/blob/master/Documentacion/diag_clases.png)
+![](https://github.com/geral831/Tec.Integracion-Banco/tree/master/Docs/diagrama_clases.png)
 
 ## Diagrama Casos de Usos
 
