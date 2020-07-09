@@ -14,9 +14,11 @@ Servicio Web de un banco para el cobro y reembolso por tarjeta.
     <x:Header/>
     <x:Body>
         <ban:RealizarCobroRequest>
-            <ban:num_tarjeta>325100000000000</ban:num_tarjeta>
-            <ban:cantidad>545</ban:cantidad>
-            <ban:pin>5454</ban:pin>
+            <ban:nombre_cliente></ban:nombre_cliente>
+            <ban:num_tarjeta></ban:num_tarjeta>
+            <ban:fecha_vencimiento></ban:fecha_vencimiento>
+            <ban:codigo_cvc></ban:codigo_cvc>
+            <ban:cantidad></ban:cantidad>
         </ban:RealizarCobroRequest>
     </x:Body>
 </x:Envelope>
@@ -26,24 +28,29 @@ Servicio Web de un banco para el cobro y reembolso por tarjeta.
 - Reembolso
 
 ```xml
-<x:Envelope
-    xmlns:x="http://schemas.xmlsoap.org/soap/envelope/"
-    xmlns:ban="http://www.example.org/banco">
-    <x:Header/>
-    <x:Body>
-        <ban:ReembolsoRequest>
-            <ban:num_tarjeta>3251000000000000</ban:num_tarjeta>
-            <ban:pago_por_reservacion>800</ban:pago_por_reservacion>
-        </ban:ReembolsoRequest>
-    </x:Body>
-</x:Envelope>
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <ns2:RealizarCobroResponse
+            xmlns:ns2="http://www.example.org/banco">
+            <ns2:pago_realizado>
+Geraldine tu pago fue exitoso por la cantidad de: $ 2500 pesos
+Con cargo a la tarjeta: 3250000000000045
+
+El pago ha sido registrado con exito
+
+Su Número de pago es: 2561</ns2:pago_realizado>
+        </ns2:RealizarCobroResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
 	
 ```
 ## Mensajes 
 
 **Función**  | **Parámetros** |**Mensaje**
 ------------- | -------------| -----------
-**RealizarCobro** |`num_tarjeta`,`cantidad` y `pin`	| "Pago exitoso por la cantidad de: $ `cantidad` pesos  con cargo a la tarjeta: `num_tarjeta`... El pago ha sido registrado con exito".
+**RealizarCobro** |`nombre_cliente`,`num_tarjeta`,`fecha_vencimineto`,`codigo_cvc` y `cantidad`	| "Pago exitoso por la cantidad de: $ `cantidad` pesos  con cargo a la tarjeta: `num_tarjeta`... El pago ha sido registrado con exito".
  **Reembolso** | `num_tarjeta` y `pago_por_reservacion`|"El reembolso es del 50 % por lo que la cantidad de reembolso es de: $ `reembolso` pesos a la cuenta:`num_tarjeta` ".
 
 
