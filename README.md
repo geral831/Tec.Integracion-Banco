@@ -32,16 +32,16 @@ Servicio Web de un banco para el cobro y reembolso por tarjeta.
     xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
-        <ns2:RealizarCobroResponse
+        <ns2:ReembolsoResponse
             xmlns:ns2="http://www.example.org/banco">
-            <ns2:pago_realizado>
-Geraldine tu pago fue exitoso por la cantidad de: $ 2500 pesos
-Con cargo a la tarjeta: 3250000000000045
-
-El pago ha sido registrado con exito
-
-Su Número de pago es: 2561</ns2:pago_realizado>
-        </ns2:RealizarCobroResponse>
+            <ns2:reembolso_realizado
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">
+El reembolso es del 95 % 
+Por lo que la cantidad de reembolso es de: $ 2850 pesos
+A la cuenta: 3250000000000015
+            </ns2:reembolso_realizado>
+        </ns2:ReembolsoResponse>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 	
@@ -51,7 +51,7 @@ Su Número de pago es: 2561</ns2:pago_realizado>
 **Función**  | **Parámetros** |**Mensaje**
 ------------- | -------------| -----------
 **RealizarCobro** |`nombre_cliente`,`num_tarjeta`,`fecha_vencimineto`,`codigo_cvc` y `cantidad`	| "Pago exitoso por la cantidad de: $ `cantidad` pesos  con cargo a la tarjeta: `num_tarjeta`... El pago ha sido registrado con exito".
- **Reembolso** | `num_tarjeta` y `pago_por_reservacion`|"El reembolso es del 50 % por lo que la cantidad de reembolso es de: $ `reembolso` pesos a la cuenta:`num_tarjeta` ".
+ **Reembolso** | `num_tarjeta` y `pago_por_reservacion`|El reembolso es del 95 % Por lo que la `cantidad` de reembolso es de: $ 2850 pesos A la cuenta: `num_tarjeta`
 
 
 ## Diagrama de Clases 
