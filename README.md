@@ -51,7 +51,7 @@ A la cuenta: 3250000000000015
 **Función**  | **Parámetros** |**Mensaje**
 ------------- | -------------| -----------
 **RealizarCobro** |`nombre_cliente`,`num_tarjeta`,`fecha_vencimineto`,`codigo_cvc` y `cantidad`	| "Pago exitoso por la cantidad de: $ `cantidad` pesos  con cargo a la tarjeta: `num_tarjeta`... El pago ha sido registrado con exito".
- **Reembolso** | `num_tarjeta` y `pago_por_reservacion`|El reembolso es del 95 % Por lo que la `cantidad` de reembolso es de: $ 2850 pesos A la cuenta: `num_tarjeta`
+ **Reembolso** | `num_tarjeta` y `pago_por_reservacion`|El reembolso es del 95 % Por lo que la cantidad de reembolso es de: $ `cantidad` pesos A la cuenta: `num_tarjeta`
 
 
 ## Diagrama de Clases 
